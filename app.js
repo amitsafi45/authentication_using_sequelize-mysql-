@@ -7,11 +7,11 @@ const app = express();
 app.use(express.json());
 app.use("/api",account);
 
-
+/*
 //for checking purpose
 app.get("/api/home", verifys, (req, res) => {
   res.send("success");
-});
+});*/
 
 app.listen(process.env.PORT,  () => {
    db.sequelize.sync();
